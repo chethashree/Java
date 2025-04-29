@@ -1,0 +1,27 @@
+<checks>
+    <check>
+        <name>url check</name>
+        <how_to_perform>Access the application URL and verify if it loads successfully.</how_to_perform>
+        <expected_outcome>URL should load the application homepage without errors.</expected_outcome>
+    </check>
+    <check>
+        <name>db check</name>
+        <how_to_perform>Connect to the database and run a sample query to verify connectivity.</how_to_perform>
+        <expected_outcome>Database should respond with correct data within acceptable time limits.</expected_outcome>
+    </check>
+    <check>
+        <name>sys check</name>
+        <how_to_perform>Check the system health using monitoring tools or command-line utilities.</how_to_perform>
+        <expected_outcome>System metrics should be within normal operating ranges.</expected_outcome>
+    </check>
+    <check>
+        <name>enc check</name>
+        <how_to_perform>Verify if data transmissions are encrypted using SSL/TLS certificates.</how_to_perform>
+        <expected_outcome>All data must be encrypted; no plain-text transmission should occur.</expected_outcome>
+    </check>
+    <check>
+        <name>memory check</name>
+        <how_to_perform>Use system tools to monitor memory usage over a period of operation.</how_to_perform>
+        <expected_outcome>Memory consumption should remain stable without major spikes.</expected_outcome>
+    </check>
+</checks>
