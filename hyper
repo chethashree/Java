@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hypertext Input Example</title>
+  <style>
+    #editor {
+      border: 2px solid #ccc;
+      padding: 10px;
+      min-height: 100px;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+    }
+    #output {
+      border: 1px dashed #888;
+      padding: 10px;
+      min-height: 50px;
+      background-color: #fff;
+    }
+    button {
+      padding: 6px 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Paste Hypertext Below:</h2>
+  <div id="editor" contenteditable="true">
+    Try pasting a hyperlink here (like <a href="https://example.com">Click Me</a>)
+  </div>
+
+  <button onclick="saveContent()">Save and Show</button>
+
+  <h3>Saved Output:</h3>
+  <div id="output"></div>
+
+  <script>
+    function saveContent() {
+      const htmlContent = document.getElementById("editor").innerHTML;
+      document.getElementById("output").innerHTML = htmlContent;
+    }
+  </script>
+
+</body>
+</html>
